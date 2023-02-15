@@ -1,53 +1,25 @@
-# Welcome to Remix!
+# RESIDENTEX
 
-- [Remix Docs](https://remix.run/docs)
+Plataforma para la administración de propiedades horizontales.
 
-## Development
+## ideas
 
-From your terminal:
+* Gestión de inquilinos: registro de inquilinos, cobro de alquileres y pago de servicios públicos.
 
-```sh
-npm run dev
-```
+* Mantenimiento y reparaciones: solicitud y seguimiento de servicios de mantenimiento y reparaciones en las propiedades.
 
-This starts your app in development mode, rebuilding assets on file changes.
+* Gestión de contratos: creación, firma y almacenamiento de contratos de alquiler y otros documentos relevantes.
 
-## Deployment
+* Comunicación con los inquilinos: mensajería interna y notificaciones para mantener a los inquilinos informados y actualizados.
 
-First, build your app for production:
+* Informes financieros: generación de informes financieros para monitorear ingresos, gastos y flujos de efectivo.
 
-```sh
-npm run build
-```
+* Reservas y pagos: sistema de reservas y pagos en línea para hacer más fácil la administración de los pagos.
 
-Then run the app in production mode:
+* Gestión de instalaciones: monitoreo y administración de las instalaciones y áreas comunes en las propiedades.
 
-```sh
-npm start
-```
+* Reportes y estadísticas: generación de reportes y estadísticas para monitorear la performance de las propiedades y tomar decisiones informadas.
 
-Now you'll need to pick a host to deploy it to.
+* Integración con aplicaciones externas: integración con aplicaciones de terceros para mejorar la eficiencia y la efectividad de la plataforma.
 
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
-
-### Using a Template
-
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+* Acceso seguro: sistema de autenticación y autorización para garantizar la seguridad de los datos y la privacidad de los usuarios.
