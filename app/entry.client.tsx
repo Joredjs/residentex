@@ -5,9 +5,7 @@ import { ThemeProvider } from "@material-tailwind/react"
 
 const tema = {
   button: {
-    valid: {
-      colors: ["primario", "secundario", "negro"]
-    }
+    defaultProps: {}
   }
 }
 

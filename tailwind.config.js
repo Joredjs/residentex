@@ -6,17 +6,18 @@ const colors = require("tailwindcss/colors")
 module.exports = withMT({
   content: ["./app/**/*.{ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        //sans: [your_main_font],
+        roboto: ["Roboto", "sans-serif"]
+      }
+    },
     //colors: require("tailwindcss/colors"),
     colors: {
-      primario: colors.emerald[300],
+      primario: colors.teal[300],
       secundario: colors.sky[300],
       negro: colors.slate[800],
       blanco: colors.pink[300]
-    },
-    fontFamily: {
-      //sans: [your_main_font],
-      roboto: ["Roboto", "sans-serif"]
     }
   },
   plugins: []

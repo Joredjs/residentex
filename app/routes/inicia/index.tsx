@@ -1,10 +1,11 @@
+import { Link } from "@remix-run/react"
+
 import {
+  Button,
   Card,
-  Input,
   CardBody,
   CardFooter,
-  Typography,
-  Button
+  Input
 } from "@material-tailwind/react"
 
 import { AtSymbolIcon, LockClosedIcon } from "@heroicons/react/24/solid"
@@ -18,10 +19,8 @@ export default function LoginView() {
         <div className="flex justify-center items-center row-start-2 row-span-3 col-start-2 col-span-10 sm:col-start-3 sm:col-span-5 md:col-start-3 md:col-span-4">
           <Card className="w-full">
             <CardBody className="text-center">
-              <Typography variant="h5" className="mb-2 text-negro">
-                RESIDENTEX {/*<span className="text-stone-700">X</span>*/}
-              </Typography>
-              <div className="text-negro text-sm">
+              <div className="titulo">RESIDENTEX</div>
+              <div className="">
                 Si ya tienes cuenta con nosotros por favor inicia sesión, de lo
                 contrario registrate!
               </div>
@@ -49,10 +48,12 @@ export default function LoginView() {
               divider
               className="flex items-center justify-between py-3"
             >
-              <Button variant="text" size="sm" color="teal">
-                Regístrate
-              </Button>
-              <Button variant="gradient" size="sm" color="green">
+              <Link to="/registrate">
+                <Button variant="text" size="sm" color="teal">
+                  Regístrate
+                </Button>
+              </Link>
+              <Button variant="gradient" size="sm" color="teal">
                 Ingresar
               </Button>
             </CardFooter>
@@ -60,15 +61,17 @@ export default function LoginView() {
         </div>
         <div className="hidden sm:block sm:col-start-8 sm:col-span-5 md:col-start-7 md:col-span-6 sm:row-span-full">
           <div className="flex justify-center items-center h-full flex-col px-6 text-primario">
-            <div className="font-bold text-lg -mt-6 mb-2">
+            <div className="titulo -mt-6 text-primario">
               What is Lorem Ipsum?
             </div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            <div className="px-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </div>
           </div>
         </div>
       </div>

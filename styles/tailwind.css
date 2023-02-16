@@ -6,6 +6,9 @@
 
 @layer base {
 	html, body{
-		@apply w-full h-full font-roboto;
+		@apply w-full h-full font-roboto text-sm;
+	}
+	.titulo{
+		@apply font-bold text-lg mb-2 text-negro;
 	}
 }
