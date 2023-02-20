@@ -10,9 +10,23 @@ module.exports = withMT({
       fontFamily: {
         //sans: [your_main_font],
         roboto: ["Roboto", "sans-serif"]
+      },
+      transitionProperty: {
+        width: "width"
+      },
+      gridTemplateColumns: {
+        16: "repeat(16, minmax(0, 1fr))"
+      },
+      gridColumn: {
+        "span-15": "span 15 / span 15"
+      },
+      gridTemplateRows: {
+        10: "repeat(10, minmax(0, 1fr))"
+      },
+      gridRow: {
+        "span-9": "span 9 / span 9"
       }
     },
-    //colors: require("tailwindcss/colors"),
     colors: {
       primario: colors.teal[300],
       secundario: colors.sky[300],

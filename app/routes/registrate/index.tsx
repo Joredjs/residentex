@@ -54,6 +54,10 @@ export default function ResgitroView() {
                     />
                   </div>
                 </div>
+                <div className="text-gray text-xs mt-5">
+                  Al registrarte aceptas estar de acuerdo con nuestros{" "}
+                  <Link to="/terminos"> términos y condiciones</Link>
+                </div>
               </CardBody>
               <CardFooter
                 divider
@@ -64,7 +68,7 @@ export default function ResgitroView() {
                     cancelar
                   </Button>
                 </Link>
-                <Link to="/bienvenida">
+                <Link to="/panel">
                   <Button variant="gradient" size="sm" color="teal">
                     Confirmar
                   </Button>
