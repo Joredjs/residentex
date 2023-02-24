@@ -23,3 +23,6 @@ Plataforma para la administración de propiedades horizontales.
 * Integración con aplicaciones externas: integración con aplicaciones de terceros para mejorar la eficiencia y la efectividad de la plataforma.
 
 * Acceso seguro: sistema de autenticación y autorización para garantizar la seguridad de los datos y la privacidad de los usuarios.
+
+TODO:
+  *-* Empezar panel <https://blog.icons8.com/articles/ui-inspiration-dashboard-designs/> <https://dribbble.com/shots/18326699-Finance-HR-System-Dashboard-Design>

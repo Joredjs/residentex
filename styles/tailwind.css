@@ -15,6 +15,6 @@
 		@apply text-blue-600 visited:text-purple-600
 	}
 	.itemMenu{
-		@apply text-primario flex justify-around items-center py-3 hover:bg-primario hover:text-negro
+		@apply text-blanco flex justify-around items-center py-3 hover:bg-blanco hover:text-negro
 	}
 }

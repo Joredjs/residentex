@@ -1,27 +1,28 @@
-import type { MetaFunction, LinksFunction } from "@remix-run/node";
+import type { MetaFunction, LinksFunction } from "@remix-run/node"
+import { appName } from "./utils/sharedInfo"
 import {
-	Links,
-	LiveReload,
-	Meta,
-	Outlet,
-	Scripts,
-	ScrollRestoration,
-} from "@remix-run/react";
+  Links,
+  LiveReload,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration
+} from "@remix-run/react"
 
-import tailwind from "./tailwind.css";
+import tailwind from "./styles/tailwind.css"
 
 export const meta: MetaFunction = () => ({
-	charset: "utf-8",
-	title: "Votaciones",
-	viewport: "width=device-width,initial-scale=1",
-});
+  charset: "utf-8",
+  title: appName,
+  viewport: "width=device-width,initial-scale=1"
+})
 
 export const links: LinksFunction = () => [
-	{ rel: "stylesheet", href: tailwind },
-];
+  { rel: "stylesheet", href: tailwind }
+]
 
 export default function App() {
-	return (
+  return (
     <html lang="en">
       <head>
         <Meta />

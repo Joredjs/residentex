@@ -1,7 +1,5 @@
 import { Link } from "@remix-run/react"
 
-import { appName } from "../../utils/sharedInfo"
-
 import {
   Button,
   Card,
@@ -11,6 +9,8 @@ import {
 } from "@material-tailwind/react"
 
 import { AtSymbolIcon, LockClosedIcon } from "@heroicons/react/24/solid"
+
+import { appName } from "../utils/sharedInfo"
 
 export default function LoginView() {
   return (

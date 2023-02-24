@@ -1,5 +1,7 @@
 import { Link } from "@remix-run/react"
 
+import { appName } from "./../utils/sharedInfo"
+
 import {
   Button,
   Card,
@@ -22,7 +24,7 @@ export default function ResgitroView() {
           <div className="flex justify-center items-center h-full px-6 sm:px-20 md:px-36">
             <Card className="w-full">
               <CardBody className="text-center">
-                <div className="titulo">RESIDENTEX</div>
+                <div className="titulo uppercase">{appName}</div>
                 <div className="text-gray">
                   Recuerda que debes ser el administrador de la propiedad
                   horizontal para poder registrarte

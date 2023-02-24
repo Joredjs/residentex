@@ -31,7 +31,7 @@ module.exports = withMT({
       primario: colors.teal[300],
       secundario: colors.sky[300],
       negro: colors.slate[800],
-      blanco: colors.pink[300]
+      blanco: colors.stone[300]
     }
   },
   plugins: []
