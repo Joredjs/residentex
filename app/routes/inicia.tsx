@@ -8,7 +8,7 @@ import {
   Input
 } from "@material-tailwind/react"
 
-import { AtSymbolIcon, LockClosedIcon } from "@heroicons/react/24/solid"
+import { AtSymbolIcon, LockClosedIcon } from "@heroicons/react/24/outline"
 
 import { appName } from "../utils/sharedInfo"
 
