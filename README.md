@@ -2,6 +2,21 @@
 
 Plataforma para la administración de propiedades horizontales.
 
+## Secciones
+
+* Admin
+  * Home (REMIX)
+    * Quienes somos
+    * Que hacemos
+    * Nuestros Servicios
+    * Pricing
+    * Contacto
+  * Login (Next)
+  * Registro (Next)
+  * Panel (Angular)
+  * Blog (Gatsby)
+* Residente
+
 ## ideas
 
 * Gestión de inquilinos: registro de inquilinos, cobro de alquileres y pago de servicios públicos.
@@ -25,4 +40,6 @@ Plataforma para la administración de propiedades horizontales.
 * Acceso seguro: sistema de autenticación y autorización para garantizar la seguridad de los datos y la privacidad de los usuarios.
 
 TODO:
-  *-* Empezar panel <https://blog.icons8.com/articles/ui-inspiration-dashboard-designs/> <https://dribbble.com/shots/18326699-Finance-HR-System-Dashboard-Design>
+
+* Cambiar a Microfrontends
+* Empezar panel <https://blog.icons8.com/articles/ui-inspiration-dashboard-designs/> <https://dribbble.com/shots/18326699-Finance-HR-System-Dashboard-Design>
