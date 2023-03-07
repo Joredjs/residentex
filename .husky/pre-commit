@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+#Verificar que la rama no es main, ya que no se puede hacer commit directo a main
+if [ "$(git rev-parse --abbrev-ref HEAD)" = "main" ]; then
+	echo "Recuerda que no se puede hacer commit directamente a main, haz checkout a tu rama {{user/yyyymmdd}}"
+	exit 1
+fi
+
+#pnpm run test:lint
+#TODO: TODO: configurar el precommit
+echo "husky precommit initialization"
+
+#single-spa
+#pnpm exec pretty-quick --staged && pnpm exec concurrently pnpm:test pnpm:lint
