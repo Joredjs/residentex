@@ -13,6 +13,6 @@ end_of_line = lf
 max_line_length = off
 trim_trailing_whitespace = false
 
-[*.yaml]
+[*.yaml,*.yml]
 indent_style = space
 indent_size = 2

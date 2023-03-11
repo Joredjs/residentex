@@ -5,3 +5,4 @@
 [ ] Crear test en Remix
 [ ] Internacionalizar los textos
 [ ] Modo oscuro
+[ ] Backend

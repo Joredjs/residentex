@@ -1,0 +1,42 @@
+version: "3.8"
+
+#Se crean los 2 servicios que vamos a utilizar en los diferentes contenedores (APP & DB)
+#Para más información visitar https://docs.docker.com/compose/compose-file/compose-file-v3/
+
+services:
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - MYSQL_ROOT_PASSWORD=$DB_PASS
+      - MYSQL_ROOT_USER=$DB_USER
+    ports:
+      - $DB_PORT_LOCAL:$DB_PORT
+    volumes:
+      - db:/var/lib/mysql
+
+  back:
+    depends_on:
+      - db
+    build:
+      context: ./backend/residentex
+      target: desarrollo
+    command: npm run start:debug
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - $NODE_PORT_LOCAL:$NODE_PORT
+    environment:
+      - DB_HOST=mysqldb
+      - DB_USER=$DB_USER
+      - DB_PASSWORD=$DB_PASS
+      - DB_NAME=$DB_NAME
+      - DB_PORT=$DB_PORT
+    stdin_open: true
+    tty: true
+networks:
+  nesjs-network:
+
+volumes:
+  db:
