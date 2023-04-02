@@ -5,6 +5,7 @@ version: "3.8"
 
 services:
   db:
+    pid: host
     image: mysql:8.0
     restart: unless-stopped
     env_file: ./.env
@@ -15,7 +16,6 @@ services:
       - $DB_PORT_LOCAL:$DB_PORT
     volumes:
       - db:/var/lib/mysql
-
   back:
     depends_on:
       - db
@@ -35,6 +35,12 @@ services:
       - DB_PORT=$DB_PORT
     stdin_open: true
     tty: true
+  diagram:
+    image: structurizr/lite
+    ports:
+      - $DIAGRAM_PORT_LOCAL:$DIAGRAM_PORT
+    volumes:
+      - ./docs/structurizr/:/usr/local/structurizr
 networks:
   nesjs-network:
 
